@@ -18,7 +18,7 @@
 #ifndef _LIBCHARSET_H
 #define _LIBCHARSET_H
 
-#if 0 && BUILDING_LIBCHARSET
+#if !defined(_WIN32) && BUILDING_LIBCHARSET
 # define LIBCHARSET_SHLIB_EXPORTED __attribute__((__visibility__("default")))
 #elif defined _MSC_VER && BUILDING_LIBCHARSET
 /* When building with MSVC, exporting a symbol means that the object file
@@ -33,7 +33,7 @@
 # if defined DLL_EXPORT
 #  define LIBCHARSET_SHLIB_EXPORTED __declspec(dllexport)
 # else
-#  define LIBCHARSET_SHLIB_EXPORTED
+#  define LIBCHARSET_SHLIB_EXPORTED __declspec (dllimport)
 # endif
 #else
 # define LIBCHARSET_SHLIB_EXPORTED

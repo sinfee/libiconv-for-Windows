@@ -26,7 +26,7 @@ extern "C" {
 
 #define _LIBICONV_VERSION 0x0112    /* version number: (major<<8) + minor */
 
-#if 0 && BUILDING_LIBICONV
+#if !defined(_WIN32) && BUILDING_LIBICONV
 # define LIBICONV_SHLIB_EXPORTED __attribute__((__visibility__("default")))
 #elif defined _MSC_VER && BUILDING_LIBICONV
 /* When building with MSVC, exporting a symbol means that the object file
@@ -41,12 +41,12 @@ extern "C" {
 # if defined DLL_EXPORT
 #  define LIBICONV_SHLIB_EXPORTED __declspec(dllexport)
 # else
-#  define LIBICONV_SHLIB_EXPORTED
+#  define LIBICONV_SHLIB_EXPORTED __declspec (dllimport)
 # endif
 #else
 # define LIBICONV_SHLIB_EXPORTED
 #endif
-extern LIBICONV_SHLIB_EXPORTED __declspec (dllimport) int _libiconv_version; /* Likewise */
+extern LIBICONV_SHLIB_EXPORTED  int _libiconv_version; /* Likewise */
 
 #ifdef __cplusplus
 }

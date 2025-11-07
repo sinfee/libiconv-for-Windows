@@ -660,6 +660,11 @@ const char * iconv_canonicalize (const char * name)
   return name;
 }
 
+void libiconv_set_relocation_prefix(const char* orig_prefix,
+    const char* curr_prefix)
+{
+}
+
 int _libiconv_version = _LIBICONV_VERSION;
 
 #if defined __FreeBSD__ && !defined __gnu_freebsd__

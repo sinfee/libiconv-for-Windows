@@ -37,6 +37,9 @@
 /* Get declarations of the native Windows API functions.  */
 # define WIN32_LEAN_AND_MEAN
 # include <windows.h>
+#if defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)
+#define HANDLE_FLAG_INHERIT 0
+#endif
 
 /* Get _get_osfhandle.  */
 # if GNULIB_MSVC_NOTHROW
