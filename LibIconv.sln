@@ -19,6 +19,9 @@ Global
 		ReleaseStatic|ARM64 = ReleaseStatic|ARM64
 		ReleaseStatic|x64 = ReleaseStatic|x64
 		ReleaseStatic|x86 = ReleaseStatic|x86
+		ReleaseV100|ARM64 = ReleaseV100|ARM64
+		ReleaseV100|x64 = ReleaseV100|x64
+		ReleaseV100|x86 = ReleaseV100|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.Debug|ARM64.ActiveCfg = Debug|ARM64
@@ -45,6 +48,12 @@ Global
 		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.ReleaseStatic|x64.Build.0 = ReleaseStatic|x64
 		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.ReleaseStatic|x86.ActiveCfg = ReleaseStatic|Win32
 		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.ReleaseStatic|x86.Build.0 = ReleaseStatic|Win32
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.ReleaseV100|ARM64.ActiveCfg = ReleaseV100|ARM64
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.ReleaseV100|ARM64.Build.0 = ReleaseV100|ARM64
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.ReleaseV100|x64.ActiveCfg = ReleaseV100|x64
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.ReleaseV100|x64.Build.0 = ReleaseV100|x64
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.ReleaseV100|x86.ActiveCfg = ReleaseV100|Win32
+		{1704EA01-6B21-4362-9F1F-44D25CF2E0D7}.ReleaseV100|x86.Build.0 = ReleaseV100|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
